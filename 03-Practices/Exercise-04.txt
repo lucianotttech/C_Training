@@ -1,0 +1,8 @@
+Exercise 4a (POINTERS)
+Create an array in order to storage an 20 char string.
+Create a function that allows fill the variable using the keyboard.
+Create another function that receive the string as reference and the print it using putch function.
+
+Exercise 4b (POINTERS)
+Create a function that scans the string and replace all numbers (1 digit) by the same number less 1 (floor 0).
+Ex: Hi mi age is 35 -> Hi mi name is 24,  Ex: I have 230 euros -> I have 120 euros

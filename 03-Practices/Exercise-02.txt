@@ -1,0 +1,2 @@
+Exercise 2 (Functions)
+Create a menu using printf and scanf in order to reuse the Exercise 1 with different values.

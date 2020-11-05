@@ -1,0 +1,10 @@
+Exercise 1 (TYPES AND CASTING)
+Create a 32 bits unsigned variable. 
+Assign the following value 270544960.
+Create 4 8 bits unsigned variables.
+Split the 32 bits in 4 slices and assign each slice to an 8 bit variable.
+Print the variable values as Hexadecimal values.
+Print the variable values as signed decimal values.
+Print the variable values as unsigned decimal values.
+
+Why do you think values between unsigned and signed print are the same??
