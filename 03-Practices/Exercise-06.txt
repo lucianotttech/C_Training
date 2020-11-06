@@ -1,2 +1,4 @@
-Exercise 6 (Dynamic memory allocation)
-Re use excersice 5 but instead create the course as a binarie tree.
+Exercise 6 - Dynamic memory allocation
+--------------------------------------
+
+Reuse exercise 5, but instead create the course as a binary tree.
