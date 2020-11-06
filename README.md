@@ -50,6 +50,10 @@
 |Paralelism|Threads|ex15||
 ||Mutex|ex16||
 
+## External resources
+
+- Online compiler for C/C++ [https://www.onlinegdb.com/](https://www.onlinegdb.com/)
+
 ## Contact information
 
 - Pablo Severini
