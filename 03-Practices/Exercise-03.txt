@@ -1,6 +1,8 @@
-Exercise 3 (Arrays , structs)
-Create program that allow to persist the course attendant information.
-Use structures in order to group attendants related information (name, surname, age)
-Create another struc called course that containa an array of attendants (max attendants setted by a define) and the starting date.
+Exercise 3 - Arrays & Structs
+-----------------------------
+
+Create a program that allows to persist the course attendant information.
+Use structures in order to group attendants related information (name, surname, age).
+Create another struc called "course" that contains an array of attendants (maximum number of attendants set by a define) and the starting date.
 Create a function that allows to load data.
-Create another function that allows to print al attendants.
+Create another function that allows to print all attendants.

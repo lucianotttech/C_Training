@@ -1,4 +1,6 @@
-Exercise 5 (Modularization)
-Take excersice 3. Include capability to set a final qualification for each attendant.
-Create several functions in order to find the top, avg and lowet qualifications.
+Exercise 5 - Modularization
+---------------------------
+
+Take the excercise 3 and include the capability to set a final qualification for each attendant.
+Create several functions in order to find the top, average and lowest qualifications.
 Modularize the code.
