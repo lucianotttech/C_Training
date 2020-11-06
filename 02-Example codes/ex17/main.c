@@ -11,48 +11,59 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    uint8_t *ptr;
-    uint8_t x;
-    uint8_t y;
+    uint32_t x;
+    uint32_t y;
+    uint32_t *ptr = NULL;
 
-    ptr = &y;
+    /* Values assignation */
     x = 10;
-    *ptr = 20;
-
-    printf("Pointer address                                 = %p \n", &ptr);
-    printf("Address pointed by the pointer                  = %x \n", ptr);
-    printf("Value inside the address pointed by the pointer = %d \n", *ptr);
-
-    printf("X value   = %d \n", x);
-    printf("X address = %p \n", &x);
-
-    printf("Y value   = %d \n", y);
-    printf("Y address = %p \n", &y);
-
-    x = *ptr + x;
-
-    printf("Pointer address                                 = %p \n", &ptr);
-    printf("Address pointed by the pointer                  = %x \n", ptr);
-    printf("Value inside the address pointed by the pointer = %d \n", *ptr);
-
-    printf("X value   = %d \n", x);
-    printf("X address = %p \n", &x);
-
-    printf("Y value   = %d \n", y);
-    printf("Y address = %p \n", &y);
-
+    y = 20;
     ptr = &x;
-    *ptr = 40;
-    
-    printf("Pointer address                                 = %p \n", &ptr);
-    printf("Address pointed by the pointer                  = %x \n", ptr);
-    printf("Value inside the address pointed by the pointer = %d \n", *ptr);
 
-    printf("X value   = %d \n", x);
-    printf("X address = %p \n", &x);
+    printf("-------------------------------------------------------------------------------- \n");
+    printf("  &x = %p \t This is the address of X \n", &x);
+    printf("   x = %d \t\t This is the value of X \n",  x);
+    printf("  &y = %p \t This is the address of Y \n", &y);
+    printf("   y = %d \t\t This is the value of Y \n",  y);
+    printf("&ptr = %p \t This is the address of the pointer                        \n", &ptr);
+    printf(" ptr = 0x%x \t This is the value of the pointer                        \n",  ptr);
+    printf("*ptr = %d \t\t This is the value at the address located in the pointer \n", *ptr);
 
-    printf("Y value   = %d \n", y);
-    printf("Y address = %p \n", &y);
-    
+    /* Read a value from the pointer */
+    y = *ptr + 100;
+
+    printf("-------------------------------------------------------------------------------- \n");
+    printf("  &x = %p \t This is the address of X \n", &x);
+    printf("   x = %d \t\t This is the value of X \n",  x);
+    printf("  &y = %p \t This is the address of Y \n", &y);
+    printf("   y = %d \t\t This is the value of Y \n",  y);
+    printf("&ptr = %p \t This is the address of the pointer                        \n", &ptr);
+    printf(" ptr = 0x%x \t This is the value of the pointer                        \n",  ptr);
+    printf("*ptr = %d \t\t This is the value at the address located in the pointer \n", *ptr);
+
+    /* Write a value using the pointer */
+    *ptr = 200;
+
+    printf("-------------------------------------------------------------------------------- \n");
+    printf("  &x = %p \t This is the address of X \n", &x);
+    printf("   x = %d \t\t This is the value of X \n",  x);
+    printf("  &y = %p \t This is the address of Y \n", &y);
+    printf("   y = %d \t\t This is the value of Y \n",  y);
+    printf("&ptr = %p \t This is the address of the pointer                        \n", &ptr);
+    printf(" ptr = 0x%x \t This is the value of the pointer                        \n",  ptr);
+    printf("*ptr = %d \t\t This is the value at the address located in the pointer \n", *ptr);
+
+    /* Use the pointer to point to the previous value */
+    ptr --;
+
+    printf("-------------------------------------------------------------------------------- \n");
+    printf("  &x = %p \t This is the address of X \n", &x);
+    printf("   x = %d \t\t This is the value of X \n",  x);
+    printf("  &y = %p \t This is the address of Y \n", &y);
+    printf("   y = %d \t\t This is the value of Y \n",  y);
+    printf("&ptr = %p \t This is the address of the pointer                        \n", &ptr);
+    printf(" ptr = 0x%x \t This is the value of the pointer                        \n",  ptr);
+    printf("*ptr = %d \t\t This is the value at the address located in the pointer \n", *ptr);
+
     return 0;
 }

@@ -12,7 +12,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 int main()
 {
     uint8_t vector[100];    /* integer array */
-    uint8_t *ptr;           /* int8 pointer */
+    uint8_t *ptr;           /* int8 pointer declaration */
     
     ptr = &vector[0];       /* ptr points to vector initial address */
     *ptr = 33;              /* vector[0] = 33 */
