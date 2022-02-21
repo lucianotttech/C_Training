@@ -16,17 +16,17 @@ void MyFunction(void)
 {
     uint16_t myLocalVar = 20;
     static uint16_t myStaticLocalVar = 20;
-    
-    g_myGlobalVar += 100;
-    
+
+    g_myGlobalVar += 100; // => g_myGlobalVar = g_myGlobalVar + 100;
+
     printf("\r\nINSIDE THE FUNCTION\r\n");
-    printf("myLocalVar:       %u \r\n",myLocalVar);
-    printf("myStaticLocalVar: %u \r\n",myStaticLocalVar);
-    printf("g_myGlobalVar:    %u \r\n",g_myGlobalVar);
-    
+    printf("myLocalVar:       %u \r\n", myLocalVar);
+    printf("myStaticLocalVar: %u \r\n", myStaticLocalVar);
+    printf("g_myGlobalVar:    %u \r\n", g_myGlobalVar);
+
     g_myGlobalVar += 100;
-    myLocalVar ++;
-    myStaticLocalVar ++;
+    myLocalVar++;
+    myStaticLocalVar++;
 }
 
 int main()
@@ -45,6 +45,6 @@ int main()
     printf("g_myGlobalVar: %u \r\n", g_myGlobalVar);
 
     MyFunction();
-    
+
     return 0;
 }

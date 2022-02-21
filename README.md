@@ -56,9 +56,6 @@
 
 ## Contact information
 
-- Pablo Severini
-    - e-mail: [pablo.severini@tttech-auto.com](pablo.severini@tttech-auto.com)
-    - [Linkedin](https://www.linkedin.com/in/pablo-severini/)
 - Luciano Curti
     - e-mail: [luciano.curti@tttech-auto.com](luciano.curti@tttech-auto.com)
     - [Linkedin](https://www.linkedin.com/in/lucianocurti/)

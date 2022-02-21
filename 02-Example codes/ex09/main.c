@@ -10,19 +10,23 @@ Code, Compile, Run and Debug online from anywhere in world.
 #include <stdio.h>
 #include <stdint.h>
 
-typedef struct{
+#define MAX_SIZE 50
+
+typedef struct
+{
     uint8_t id;
-    uint8_t descriptor [50];
+    uint8_t descriptor[MAX_SIZE];
 } myStruct_t;
 
-uint8_t myFunction(myStruct_t *myStruct)
+uint8_t myFunction(myStruct_t *myStructPtr)
 {
-    printf("\r\nMy struct size: %lu bytes \r\n", sizeof(*myStruct));
-    printf("ID: %u         \r\n", myStruct->id);
-    printf("Descriptor: %s \r\n", myStruct->descriptor);
-    printf("ID: %u         \r\n", (*myStruct).id);
-    printf("Descriptor: %s \r\n", (*myStruct).descriptor);
-    
+    printf("\r\nMy struct size: %lu bytes \r\n", sizeof(*myStructPtr));
+    printf("ID: %u         \r\n", (*myStructPtr).id);
+    printf("Descriptor: %s \r\n", (*myStructPtr).descriptor);
+
+    printf("ID: %u         \r\n", myStructPtr->id);
+    printf("Descriptor: %s \r\n", myStructPtr->descriptor);
+
     return 10;
 }
 
@@ -34,12 +38,16 @@ int main()
     myStruct.descriptor[1] = 'B';
     myStruct.descriptor[2] = 'C';
     myStruct.descriptor[3] = '\0';
-    
+
+    printf("\r\nMy struct size: %lu bytes \r\n", sizeof(myStruct));
+
     myFunction(&myStruct);
 
-    uint8_t (*ptrFunction) (myStruct_t *) = &myFunction; // Also "myFunction" works
-    
-    printf("\r\nReturn value: %u", (*ptrFunction) (&myStruct)); // Also "ptrFunction (&myStruct)" works
+    uint8_t (*ptrFunction)(myStruct_t *);
+
+    ptrFunction = &myFunction; // Also "myFunction" works
+
+    printf("\r\nReturn value: %u", (*ptrFunction)(&myStruct)); // Also "ptrFunction (&myStruct)" works
 
     return 0;
 }

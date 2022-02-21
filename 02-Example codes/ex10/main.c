@@ -14,8 +14,8 @@ extern int32_t multiply(int32_t a, int32_t b);
 
 int main()
 {
-    printf("Multiply:  %d \r\n", multiply(2,2));
+    printf("Multiply:  %d \r\n", multiply(2, 2));
     printf("Factorial: %d \r\n", factorial(10));
-    
+
     return 0;
 }
