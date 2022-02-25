@@ -13,12 +13,10 @@ Code, Compile, Run and Debug online from anywhere in world.
 #include <stdio.h>
 #include <unistd.h>
 
-
 /**********************/
 /*   State Machines   */
 /**********************/
 #include "state_machine.h"
-
 
 /********************/
 /*   Main Program   */
@@ -26,22 +24,22 @@ Code, Compile, Run and Debug online from anywhere in world.
 int main()
 {
     printf("Main: Init \n");
-    
+
     // Initialize all state machines
     InitializeFSM();
-    
+
     // Infinite loop
-    while(1)
+    while (1)
     {
         // Update all state machines
         UpdateFSM();
-        
+
         /* This delay here is for learning purposes only */
         /* In a real condition, a 1ms interrupt must be implemented
         and used to decrease a counter variable */
-        usleep(1000);   // 1 ms
+        usleep(1000); // 1 ms
     }
-    
+
     printf("Main: End \n");
 
     return 0;
